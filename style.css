@@ -3,6 +3,13 @@
     width: 20px;
     background-color:brown;
     height: 20px;
-    color:black
-    
+
+}
+
+#colorg{
+    color: green;
+}
+
+#colorr {
+    color: red;
 }

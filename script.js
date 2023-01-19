@@ -48,6 +48,10 @@ function affichernbNotes(){
     return nbNotes
 } 
 
-for( let i = 1 ; i <= nbNotes; i++) {
-    
-}
+
+console.log(affichernbNotes());
+
+// for( let i = 1 ; i <= nbNotes; i++) {
+//    let ultmp = `<ul>`
+   
+// }
