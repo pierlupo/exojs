@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Exercices 17</title>
-</head>
-<body>
- <header>
-    <h1>Mon Exemple : </h1>
-    <hr>
- </header>  
+  </head>
+  <body>
+    <header>
+      <h1>Mon Exemple :</h1>
+      <hr />
+    </header>
 
-   <main>
+    <main>
+      <div class="container">
+        <div id="form">
+          <label for="nom">Nom : </label>
+          <input type="text" name="nom" id="nom" class="mesInput" />
+          <label for="race">Race : </label>
+          <input type="text" name="race" id="race" class="mesInput" />
+          <label for="age">Age : </label>
+          <input type="number" name="age" id="age" class="mesInput" />
+          <input type="reset" id="reset" value="Reset" class="mesInput">
 
-<div id="form">
-
-    <label for="nom">Nom : </label>
-    <input type="text" name="nom" id="nom" class="mesInput"><br>
-    <label for="race">Race : </label>
-    <input type="text" name="race" id="race" class="mesInput"><br>
-    <label for="age">Age : </label>
-    <input type="number" name="age" id="age" class="mesInput"><br>
-
- 
-    <hr>
-    <select name="my_select" id="my_select" placeholder="sélectionner un chien">
-        
-        <option value="0">sélectionner un chien</option>
-    
-        
-    </select>
- 
-    <hr>
-
-    <button type="submit" id="my_Button">Envoyer</button>
-
-
-</div>
-<div id="idOutPut">
-
-</div>
-    
-   
-   </main>
-</body>
+          
+        </div>
+        <div id="form2">
+            <select name="my_select" id="my_select" class="mesInput">
+              <option value="0">sélectionner un chien</option>
+            </select>
+            <button type="submit" id="my_Button" class="mesInput">Envoyer</button>
+          </div>
+      </div>
+      
+      <div id="idOutPut"></div>
+      <hr />
+    </main>
+  </body>
 </html>
