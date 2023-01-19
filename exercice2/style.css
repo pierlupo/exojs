@@ -15,12 +15,20 @@ h1{
     width:50rem;
     color: rgba(255, 255, 255, 0.808);
     padding: 2rem;
-    display:flex;
-    justify-content: center;
+    display:flex;   
+
     
 }
 
+#y_Button{
+    cursor: pointer;
 
+
+}
+
+#idOutPut{
+text-align: center;
+}
 
 
 

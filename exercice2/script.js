@@ -26,15 +26,20 @@ const output = document.getElementById('idOutPut');
 // console.log(btn);
 // console.log(output);
 
-chiens.forEach(chien => {
+const refreshDogSelect = () => {
+    select.innerHTML = `<option value ="0">Sélectionner un chien</option>`;
+    chiens.forEach(chien => {
     console.log(chien.nom);
-    select.innerHTML += `<option value ="${chiens.indexOf(chien)+1}>${chien.name}</option>`;
+    select.innerHTML += `<option value ="${chiens.indexOf(chien)+1}">${chien.nom}</option>`;
 
-});
- select.addEventListener("change", () => {
+    });
+}
+
+
+select.addEventListener("change", () => {
     let chienId = select.value;
     if(chienId !=0){
-        output.textContent += `Vous avez selectionné le chien avec l'ID : ${chienId}` 
+        output.textContent = `Vous avez selectionné le chien avec l'ID : ${chienId}` 
 
     }else {
         output.textContent="";
@@ -43,6 +48,33 @@ chiens.forEach(chien => {
 });
 
 console.log(select);
+
+btn.addEventListener("click", ()=>{
+     let nom = document.querySelector('#nom').value;
+     let race = document.querySelector('#race').value;
+     let age = Number(document.querySelector('#age').value);
+     let inputVides = document.querySelectorAll('.mesInput').value;
+         chiens.push({
+         nom: nom,
+         race: race,
+         age: age
+     });
+     console.table(chiens);
+
+     refreshDogSelect();
+     output.textContent="";
+     inputVides ="";
+    //console.log(inputVide);
+    //  chiens[chiens.length] = {
+    //      nom: nom,
+    //      race: race,
+    //      age: age
+    //  };
+})
+
+console.table(chiens);
+
+refreshDogSelect();
 
 // function ajoutChien(){
 //     let nom = document.querySelector('#nom');
